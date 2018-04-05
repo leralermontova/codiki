@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import './about.scss';
 import '../common/commonStyles.scss';
 
@@ -12,7 +12,7 @@ class About extends Component {
                     <p>hjggj</p>
                 </div>
             </div>
-        )
+        );
     }
 }
 
