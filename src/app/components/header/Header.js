@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import './Cookies.scss';
+import './Header.scss';
 import logo from './images/Logoheader.svg';
 
 class Cookies extends Component {
