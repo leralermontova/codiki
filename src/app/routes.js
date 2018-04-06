@@ -1,6 +1,7 @@
 // import Home from "../app/components/home/Home";
 // import News from "../app/components/news/News";
 import Header from "../app/components/header/Header";
+import App from "./App";
 import Carousel from "../app/components/carousel/Carousel";
 
 const routes = [
@@ -12,7 +13,7 @@ const routes = [
   {
     path: "/",
     exact: true,
-    component: Header
+    component: App
   }
 ];
 
