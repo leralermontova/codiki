@@ -1,13 +1,112 @@
 @import "../common/commonStyles";
-
-.hz {
+.about {
   display: block;
-  background: $color-orange;
-  width: 300px;
-  height: 200px;
-  @include regular(20px);
+  position: relative;
+}
 
-  p {
-    @include regular(10px);
+.about-inner {
+  display: block;
+  position: relative;
+
+  &__header {
+    @include about;
+  }
+
+  &__item-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 100px;
+    margin-left: 58px;
+    position: relative;
+
+    .text-container{
+      display: flex;
+      flex-direction: column;
+      height: 510px;
+      width: 675px;
+      padding-right: 100px;
+      //background: #808080;
+
+      h2 {
+        @include title(40pt);
+        margin: 0 0 20px 0;
+      }
+
+      p {
+        @include regular(22pt);
+        margin: 20px 0;
+      }
+    }
+
+    .second {
+      justify-content: center;
+      text-align: right;
+      margin: 0;
+      padding: 0 0 0 200px;
+      width: 780px;
+    }
+
+    .img-right{
+      display: block;
+
+      img{
+        width: 780px;
+      }
+    }
+
+    .img-left{
+      width: 675px;
+    }
+
+    .square{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 262px;
+      margin: auto;
+      width: 255px;
+      height: 470px;
+      border: $color-orange2 2px solid;
+
+      &__icon{
+        height: 50%;
+        padding: 81px 43px;
+
+        &:nth-child(2){
+          padding: 73px 73px 73px 133px;
+        }
+      }
+    }
+  }
+}
+
+.footer-wrap{
+  display: block;
+  position: relative;
+  margin: 100px 0;
+
+  &__img {
+    display: block;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+
+    img {
+      display: block;
+      margin: 0 auto;
+      position: absolute;
+    }
+  }
+
+  &__line{
+    position: relative;
+    width: 100%;
+    z-index: -10;
+    height: 2px;
+    background: $gray;
+    bottom: 6px;
+    display: block;
   }
 }
