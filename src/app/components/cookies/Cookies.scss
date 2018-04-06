@@ -1,0 +1,49 @@
+.cookies-bar {
+    display: block;
+    min-height: 30px;
+    max-height: 500px;
+    width: 100%;
+    padding: 15px 20px 15px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    background-color: #808080;
+    z-index: 999;
+    opacity: 0.9;
+}
+
+.cookies-bar-inner {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+@media screen and (max-width: 1023px) {
+  .cookies-bar-inner {
+      flex-direction: column;
+  }
+}
+
+.cookies-bar-inner__btn {
+    display: block;
+    padding: 15px;
+}
+.cookies-bar-inner__btn button {
+    width: 100px;
+    height: 30px;
+    color: #808080;
+    cursor: pointer;
+}
+
+.cookies-bar-inner__text {
+    display: block;
+}
+
+.cookies-bar-inner__text p {
+    color: #000;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 300;
+    color: #fff;
+}
