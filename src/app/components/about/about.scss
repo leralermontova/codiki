@@ -85,7 +85,7 @@
 .footer-wrap{
   display: block;
   position: relative;
-  margin: 100px 0;
+  margin: 70px 0;
 
   &__img {
     display: block;
@@ -96,12 +96,11 @@
     img {
       display: block;
       margin: 0 auto;
-      position: absolute;
     }
   }
 
   &__line{
-    position: relative;
+    position: absolute;
     width: 100%;
     z-index: -10;
     height: 2px;
