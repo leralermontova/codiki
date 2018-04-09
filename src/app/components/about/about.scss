@@ -87,6 +87,18 @@
   position: relative;
   margin: 70px 0;
 
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 6px;
+    left: 0;
+    height: 2px;
+    background: $gray;
+    z-index: -5;
+
+  }
+
   &__img {
     display: block;
     position: relative;
@@ -97,15 +109,9 @@
       display: block;
       margin: 0 auto;
     }
+
+
+
+    }
   }
 
-  &__line{
-    position: absolute;
-    width: 100%;
-    z-index: -10;
-    height: 2px;
-    background: $gray;
-    bottom: 6px;
-    display: block;
-  }
-}

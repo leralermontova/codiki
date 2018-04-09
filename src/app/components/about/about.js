@@ -56,8 +56,6 @@ class About extends Component {
                     <div className="footer-wrap__img">
                         <img src={icon3} alt=""/>
                     </div>
-                    <div className="footer-wrap__line">
-                    </div>
                 </div>
             </div>
         );
