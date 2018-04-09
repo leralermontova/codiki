@@ -191,7 +191,10 @@ main.loading {
   }
 }
 .header {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  align-items: center;
   position: absolute;
   top: 0;
   left: 0;
@@ -235,7 +238,6 @@ main.loading {
 }
 @media screen and (max-width: 1023px) {
   .header-nav {
-    // display: none;
     background-color: #fff;
     position: absolute;
     margin: auto;
@@ -409,3 +411,24 @@ main.loading {
     font-family: 'object-fit: cover;';
   }
 }
+
+  .header-wraper {
+    .header-nav {
+      background-color: #fff;
+      position: absolute;
+      margin: auto;
+      left: 0;
+      right: 0;
+      text-align: center;
+      z-index: 2;
+      height: auto;
+      justify-content: center;
+
+    }
+
+    &.close {
+      .header-nav {
+        display: none;
+      }
+    }
+  }
