@@ -29,27 +29,40 @@ export default class PodKlucz extends Component {
     };
     return (
       <div>
-        <Slider ref={slider => (this.slider = slider)} {...settings} className="slick">
-          <div>
-            <img className="imgSlider" src={img1} alt="" />
-          </div>
-          <div>
-            <img className="imgSlider" src={img2} alt="" />
-          </div>
-          <div>
-            <img className="imgSlider" src={img3} alt="" />
-          </div>
-        </Slider>
-        <div className="main-container">
-          <div className="slider-text">
-            <div className="slider-text__header">
-              <h1><strong>Lake</strong> Village</h1>
+        <div className="titleBlock">
+          <div className="mainText">Pod klucz</div>
+          <div className="secondaryText">Pod klucz <br/>Pod klucz <br/>Pod klucz </div>
+        </div>
+        <div className="horizontal">
+          <div className="mainContainer">
+            <div className="title"></div>
+            <div className="subtitle"> <br/></div>
+            <div className="infoText">
+              <div className="secondaryText">
+                <span>Wiemy, że bywają sytuacje kiedy mają</span>
+                <span>Państwo mało czasu na wprowadzenie</span>
+                <span>się do nowego mieszkania — to również</span>
+                <span>nie stanowi dla nas problemu.</span>
+                <span>Decydując się na wykończenie</span>
+                <span>z nami wnętrza:</span>
+                <span>@ oszczędzają Państwo czas</span>
+                <span>@ współpracują Państwo ze specjalistami</span>
+                <span>@ mogą Państwo liczyć na porady</span>
+              </div>
             </div>
-            <div className="slider-text__paragraph">
-              <p>Pozwól sobie na wymarzony <br /> Dom nad jeziorem</p>
-            </div>
-            <a className="slider-button">Dalej</a>
           </div>
+          <Slider ref={slider => (this.slider = slider)} {...settings} className="slick">
+            <div>
+              <img className="imgKlucz" src={img1} alt="" />
+            </div>
+            <div>
+              <img className="imgKlucz" src={img2} alt="" />
+            </div>
+            <div>
+              <img className="imgKlucz" src={img3} alt="" />
+            </div>
+          </Slider>
+
         </div>
       </div>
     );

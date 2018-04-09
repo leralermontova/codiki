@@ -1,31 +1,31 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
-.imgSlider {
-  max-width: 1920px;
-  width: 100%;
-  height: auto;
-  min-height: 100vh;
-  @media screen and (max-width: 765px) {
-    width: auto;
-    max-height: 300px;
-  }
-}
-
 .slick {
   display: block;
-  position: relative;
-  max-width: 1920px;
-  width: 100%;
+  // position: relative;
+  // max-width: 1920px;
+  width: 66%;
   height: auto;
+  right: 0;
 }
 
-.logo {
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.mainContainer{
+  width: 30%;
+  width: 600px;
+  border: 2px #f60 solid;
   position: absolute;
-  left: 3%;
-  top: 80px;
-  height: 260px;
-  width: 150px;
+  top: 30px;
+  left: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  padding-left: 40px;
 }
 
 @media screen and (max-width: 765px) {
@@ -112,14 +112,17 @@
 .main-container .slider-text__paragraph {
   display: block;
 }
-.main-container .slider-text__paragraph p {
-  color: #fff;
-  font-size: 24px;
+
+.secondaryText {
+  display: flex;
+  flex-direction: column;
+}
+
+span {
   font-family: sans-serif;
+  font-size: 14px;
+  color: black;
   font-weight: 300;
-  color: #fff;
-  margin: 10px 0;
-  letter-spacing: 1px;
 }
 
 .main-container .slider-button {
@@ -137,7 +140,6 @@
   color: #fff;
   font-size: 24px;
   font-family: sans-serif;
-  font-weight: 300;
   text-transform: uppercase;
   font-weight: 600;
   text-align: center;
