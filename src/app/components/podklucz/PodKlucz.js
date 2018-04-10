@@ -51,7 +51,7 @@ export default class PodKlucz extends Component {
               </div>
             </div>
           </div>
-          <Slider ref={slider => (this.slider = slider)} {...settings} className="slick">
+          <Slider ref={slider => (this.slider = slider)} {...settings} className="slickSlider">
             <div>
               <img className="imgKlucz" src={img1} alt="" />
             </div>
