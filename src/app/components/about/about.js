@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-// import { Link } from 'react-router-dom';
 import './about.scss';
 import '../common/commonStyles.scss';
 import img1 from './img/photo1.png'
 import img2 from './img/photo2.png'
 import icon1 from './img/1.svg'
 import icon2 from './img/2.svg'
-import icon3 from './img/3.svg'
+import icon5 from './img/5.svg'
 
 
 class About extends Component {
@@ -54,8 +53,9 @@ class About extends Component {
                 </div>
                 <div className="footer-wrap">
                     <div className="footer-wrap__img">
-                        <img src={icon3} alt=""/>
+                        <img src={icon5} alt=""/>
                     </div>
+                    <div className="line"></div>
                 </div>
             </div>
         );
