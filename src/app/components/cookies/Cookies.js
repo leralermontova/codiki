@@ -1,27 +1,16 @@
 import React, { Component } from 'react';
 import './Cookies.scss';
-import logo from './images/Logoheader.svg';
 
 class Cookies extends Component {
-  render() {
+  render () {
     return (
-      <div className="header">
-        <div className="header-wraper">
-          <div className="header-inner">
-            <div className="header-nav-wrap">
-              <nav className="header-nav">
-                <ul className="nav-list">
-                  <li className="nav-list__item"><a className="active nav-list__link" href=""> <span className="none-after">O nas</span></a></li>
-                  <li className="nav-list__item"><a className="nav-list__link" href=""> <span>Opisanie Oferty</span></a></li>
-                  <li className="nav-list__item"><a className="nav-list__link" href=""> <span>Finansowanie</span></a></li>
-                  <li className="nav-list__item"><a className="nav-list__link" href=""> <img src={logo} alt="dom" /></a></li>
-                  <li className="nav-list__item"><a className="nav-list__link" href=""> <span>Localizacja</span></a></li>
-                  <li className="nav-list__item"><a className="nav-list__link" href=""> <span>Oferta</span></a></li>
-                  <li className="nav-list__item"><a className="nav-list__link" href=""> <span>KontaKt</span></a></li>
-                </ul>
-              </nav>
-              <div className="menu-icon"><span></span></div>
-            </div>
+      <div className="cookies-bar">
+        <div className="cookies-bar-inner">
+          <div className="cookies-bar-inner__text">
+            <p>Nasza strona internetowa używa plików cookies (tzw. ciasteczka) w celach statystycznych, reklamowych oraz funkcjonalnych. Dzięki nim możemy indywidualnie dostosować stronę do twoich potrzeb. Każdy może zaakceptować pliki cookies albo ma możliwość wyłączenia ich w przeglądarce, dzięki czemu nie będą zbierane żadne informacje. </p>
+          </div>
+          <div className="cookies-bar-inner__btn">
+            <button id="catapultCookie">OK</button>
           </div>
         </div>
       </div>
