@@ -1,7 +1,10 @@
 @import "../common/commonStyles";
+
 .about {
   display: block;
   position: relative;
+  margin-top: 100px;
+  overflow: hidden;
 }
 
 .about-inner {
@@ -26,16 +29,29 @@
       height: 510px;
       width: 675px;
       padding-right: 100px;
-      //background: #808080;
+
+      @include below($norm){
+        height: 250px;
+        width: 405px;
+      }
 
       h2 {
         @include title(40pt);
         margin: 0 0 20px 0;
+
+        @include below($norm){
+          @include title(28pt);
+          margin: 0;
+        }
       }
 
       p {
         @include regular(22pt);
         margin: 20px 0;
+
+        @include below($norm){
+          @include regular(12pt);
+        }
       }
     }
 
@@ -45,6 +61,11 @@
       margin: 0;
       padding: 0 0 0 200px;
       width: 780px;
+
+      @include below($norm){
+        width: 509px;
+        padding: 85px 0 0 132px;
+      }
     }
 
     .img-right{
@@ -52,11 +73,23 @@
 
       img{
         width: 780px;
+
+        @include below($norm){
+          width: 463px;
+        }
       }
     }
 
     .img-left{
       width: 675px;
+
+      @include below($norm){
+        width: 360px;
+
+        img {
+          width: 100%;
+        }
+      }
     }
 
     .square{
@@ -70,12 +103,26 @@
       height: 470px;
       border: $color-orange2 2px solid;
 
+      @include below($norm){
+        width: 185px;
+        right: 205px;
+        height: 300px;
+      }
+
       &__icon{
         height: 50%;
         padding: 81px 43px;
 
+        @include below($norm){
+          padding: 50px 18px;
+        }
+
         &:nth-child(2){
           padding: 73px 73px 73px 133px;
+
+          @include below($norm){
+            padding: 35px 100px 100px;
+          }
         }
       }
     }
@@ -90,22 +137,19 @@
   justify-content: center;
   align-items: center;
   margin: 100px 0;
+  overflow: hidden;
 
   &__img {
     z-index: 1;
     position: relative;
     color: gray;
     background: white;
+
+    @include below($norm){
+      img{
+        width: 1600px;
+      }
     }
-
-  .line {
-    z-index: 0;
-    position: absolute;
-    bottom: 11px;
-    width: 100%;
-    height: 3px;
-    background-color: $gray;
-  }
-
+    }
 }
 

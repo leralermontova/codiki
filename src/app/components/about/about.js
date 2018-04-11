@@ -5,7 +5,7 @@ import img1 from './img/photo1.png'
 import img2 from './img/photo2.png'
 import icon1 from './img/1.svg'
 import icon2 from './img/2.svg'
-import icon5 from './img/5.svg'
+import icon4 from './img/4.svg'
 
 
 class About extends Component {
@@ -53,9 +53,8 @@ class About extends Component {
                 </div>
                 <div className="footer-wrap">
                     <div className="footer-wrap__img">
-                        <img src={icon5} alt=""/>
+                        <img src={icon4} alt=""></img>
                     </div>
-                    <div className="line"></div>
                 </div>
             </div>
         );

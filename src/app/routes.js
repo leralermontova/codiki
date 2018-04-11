@@ -1,4 +1,4 @@
-import Header from "../app/components/header/Header";
+//import Header from "../app/components/header/Header";
 import App from "./App";
 import About from "../app/components/about/about";
 import Carousel from "../app/components/carousel/Carousel";

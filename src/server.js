@@ -53,7 +53,7 @@ server
               <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
               <meta charSet='utf-8' />
               <title>Welcome to Razzle</title>
-              <meta name="viewport" content="width=device-width, initial-scale=1">
+              <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
               <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
               ${assets.client.css
                 ? `<link rel="stylesheet" href="${assets.client.css}">`

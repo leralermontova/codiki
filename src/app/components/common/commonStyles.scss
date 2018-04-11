@@ -20,27 +20,29 @@ a {
   outline: none;
 }
 
+$norm: 1599px;
+$tab: 1023px;
+$mob: 767px;
+
+@mixin below($value) {
+  @media screen and (max-width: $value) { @content; }
+}
+
 .wrapper {
   display: block;
   margin: 0 auto;
-  max-width: 964px;
+  max-width: 1520px;
   width: 100%;
   min-height: 100%;
   position: relative;
-  //background: #c6b0f1;
-}
-@media screen and (min-width: 1670px) {
-  .wrapper {
-    max-width: 1520px;
+
+  @include below($norm){
+    max-width: 964px;
   }
-}
-@media screen and (max-width: 1023px) {
-  .wrapper {
+  @include below($tab){
     max-width: 728px;
   }
-}
-@media screen and (max-width: 765px) {
-  .wrapper {
+  @include below($mob){
     max-width: 100%;
   }
 }
@@ -79,6 +81,11 @@ $color-white: #fff;
     @include title(40pt);
     font-weight: 700;
 
+    @include below($norm){
+      @include title(24pt);
+      font-weight: 700;
+    }
+
     &:after{
       content: "";
       display: block;
@@ -90,6 +97,11 @@ $color-white: #fff;
       right: 50%;
       transform: translate(-50%, -50%);
       margin-top: 20px;
+
+      @include below($norm){
+        width: 250px;
+      }
     }
   }
 }
+
