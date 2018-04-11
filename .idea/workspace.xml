@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3f04786c-cb85-4f51-99d5-7eb5c3f46e97" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/about/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/about/about.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/about/about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/about/about.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/about/img/5.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/about/img/5.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/common/commonStyles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/commonStyles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -53,8 +46,8 @@
           <file leaf-file-name="commonStyles.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/app/components/common/commonStyles.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="99">
-                  <caret line="22" selection-start-line="22" selection-end-line="28" selection-end-column="1" />
+                <state relative-caret-position="146">
+                  <caret line="35" column="19" lean-forward="true" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
                 </state>
               </provider>
             </entry>
@@ -89,8 +82,8 @@
         <option value="$PROJECT_DIR$/src/server.js" />
         <option value="$PROJECT_DIR$/src/app/components/about/about.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/app/components/common/commonStyles.scss" />
         <option value="$PROJECT_DIR$/src/app/components/about/about.scss" />
+        <option value="$PROJECT_DIR$/src/app/components/common/commonStyles.scss" />
       </list>
     </option>
   </component>
@@ -236,7 +229,7 @@
       <workItem from="1523267064527" duration="4750000" />
       <workItem from="1523358134220" duration="1672000" />
       <workItem from="1523360710617" duration="15975000" />
-      <workItem from="1523432405124" duration="648000" />
+      <workItem from="1523432405124" duration="1598000" />
     </task>
     <task id="LOCAL-00001" summary="about start">
       <created>1522941537534</created>
@@ -280,21 +273,27 @@
       <option name="project" value="LOCAL" />
       <updated>1523267197633</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="about 1024 +mixins">
+      <created>1523442954263</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1523442954263</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54313000" />
+    <option name="totallyTimeSpent" value="55263000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.123595506" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.50208336" side_tool="true" weight="0.32942432" />
-      <window_info anchor="bottom" id="Version Control" order="1" sideWeight="0.49583334" weight="0.32461873" />
+      <window_info anchor="bottom" id="Version Control" order="1" sideWeight="0.49583334" weight="0.4227273" />
       <window_info anchor="bottom" id="Run" order="6" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info active="true" anchor="bottom" id="Terminal" order="2" sideWeight="0.49791667" visible="true" weight="0.23939393" />
@@ -329,7 +328,8 @@
     <MESSAGE value="about 1920 almost done" />
     <MESSAGE value="about 1920 almost fix" />
     <MESSAGE value="about 1920 img" />
-    <option name="LAST_COMMIT_MESSAGE" value="about 1920 img" />
+    <MESSAGE value="about 1024 +mixins" />
+    <option name="LAST_COMMIT_MESSAGE" value="about 1024 +mixins" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -616,8 +616,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/common/commonStyles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="22" selection-start-line="22" selection-end-line="28" selection-end-column="1" />
+        <state relative-caret-position="146">
+          <caret line="35" column="19" lean-forward="true" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
         </state>
       </provider>
     </entry>
