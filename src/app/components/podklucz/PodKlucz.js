@@ -60,6 +60,17 @@ export default class PodKlucz extends Component {
           </div>
         </div>
         <div className="horizontal">
+          <Slider ref={slider => (this.slider = slider)} {...settings} className="slickSlider">
+            <div>
+              <img className="imgKlucz" src={img1} alt="" />
+            </div>
+            <div>
+              <img className="imgKlucz" src={img2} alt="" />
+            </div>
+            <div>
+              <img className="imgKlucz" src={img3} alt="" />
+            </div>
+          </Slider>
           <div className="mainContainer">
             <div className="title">SPRAWDZENI FACHOWCY</div>
             <div className="subtitle">GWARANTUJĄ SOLIDNIE <br/>TERMINDWO WYKONANE PRACE</div>
@@ -77,17 +88,7 @@ export default class PodKlucz extends Component {
               </div>
             </div>
           </div>
-          <Slider ref={slider => (this.slider = slider)} {...settings} className="slickSlider">
-            <div>
-              <img className="imgKlucz" src={img1} alt="" />
-            </div>
-            <div>
-              <img className="imgKlucz" src={img2} alt="" />
-            </div>
-            <div>
-              <img className="imgKlucz" src={img3} alt="" />
-            </div>
-          </Slider>
+
 
         </div>
       </div>
