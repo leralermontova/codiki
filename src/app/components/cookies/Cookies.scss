@@ -11,6 +11,10 @@
     background-color: #808080;
     z-index: 999;
     opacity: 0.9;
+
+    &.close {
+      display: none;
+    }
 }
 
 .cookies-bar-inner {

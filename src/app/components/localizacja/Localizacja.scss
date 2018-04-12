@@ -1,0 +1,58 @@
+@import "../common/commonStyles";
+.local {
+  display: block;
+  position: relative;
+  margin-top: 100px;
+  overflow: hidden;
+}
+
+.mapImage {
+  max-height: 800px;
+}
+
+.titleBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .mainText {
+    font-family: sans-serif;
+    font-size: 40pt;
+    color: #214478;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 0 0 20px 0;
+    font-weight: bold;
+
+    @include below($mob){
+      font-size: 20px;
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 500px;
+      height: 2px;
+      background: #d45500;
+      position: absolute;
+      left: 50%;
+      right: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      margin-top: 20px;
+    }
+  }
+
+  .secondaryText {
+    font-family: sans-serif;
+    font-size: 22pt;
+    color: black;
+    font-weight: 300;
+    margin: 20px 0;
+    text-align: center;
+    padding: 0 20px;
+
+    @include below($mob){
+      font-size: 16px;
+    }
+  }
+}

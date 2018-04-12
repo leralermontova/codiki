@@ -29,7 +29,7 @@
     flex-direction: row;
     position: relative;
     justify-content: flex-end;
-    padding: 0 50px;
+    padding: 0 0 0 50px;
 
     @include below($mob){
       flex-direction: column;
@@ -69,7 +69,7 @@
     }
 
     @include below($tab){
-      left: 5%;
+      left: 20px;
       width: 90%;
     }
   }

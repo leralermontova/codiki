@@ -7,8 +7,8 @@ import logo from './images/Logoheader.svg';
 class Cookies extends Component {
 
     state = {
-    isOpen: false,
-  };
+      isOpen: false,
+    };
 
   toggleMenu = () => this.setState({ isOpen: !this.state.isOpen });
 
