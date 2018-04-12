@@ -26,7 +26,8 @@
   width: 100%;
   height: calc(100vh - 80px);
   margin: 0 auto;
-  @media screen and (max-width: 765px) {
+
+  @media screen and (max-width: 1023px) {
     height: calc(100vh - 50px);
   }
 }
@@ -38,10 +39,12 @@
   height: 100vh;
   padding-top: 80px;
   overflow: hidden;
-  @include below(tab){
-    padding-top: 50px;
+
+  @media screen and (max-width: 1023px) {
+    padding-top: 50px !important;
   }
 }
+
 .slick {
   max-width: 1920px;
   width: 100%;
@@ -75,7 +78,7 @@
     width: 85px;
   }
 }
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 1023px) {
   .main-container .logo {
     top: 50px;
   }
