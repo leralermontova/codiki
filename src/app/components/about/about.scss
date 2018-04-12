@@ -23,6 +23,11 @@
     margin-left: 58px;
     position: relative;
 
+    @include below($mob){
+      margin-top: 50px;
+      margin-left: 0;
+    }
+
     .text-container{
       display: flex;
       flex-direction: column;
@@ -34,6 +39,15 @@
         height: 250px;
         width: 405px;
       }
+      @include below($tab){
+        width: 305px;
+        padding-right: 0;
+        height: 197px;
+      }
+      @include below($mob){
+        margin: 0 auto;
+        height: 150px;
+      }
 
       h2 {
         @include title(40pt);
@@ -42,6 +56,10 @@
         @include below($norm){
           @include title(28pt);
           margin: 0;
+        }
+
+        @include below($mob){
+          @include title(18pt)
         }
       }
 
@@ -66,6 +84,15 @@
         width: 509px;
         padding: 85px 0 0 132px;
       }
+      @include below($tab){
+        width: 357px;
+        padding: 67px 0 0 65px;
+      }
+      @include below($mob){
+        padding: 0;
+        width: 305px;
+        margin: 0 auto;
+      }
     }
 
     .img-right{
@@ -76,6 +103,13 @@
 
         @include below($norm){
           width: 463px;
+        }
+        @include below($tab){
+          width: 300px;
+        }
+        @include below($mob){
+          width: 100%;
+          margin-bottom: 10px;
         }
       }
     }
@@ -89,6 +123,12 @@
         img {
           width: 100%;
         }
+      }
+      @include below($tab){
+        width: 250px;
+      }
+      @include below($mob){
+        display: none;
       }
     }
 
@@ -109,6 +149,15 @@
         height: 300px;
       }
 
+      @include below($tab){
+        width: 98px;
+        right: 170px;
+        height: 146px;
+      }
+      @include below($mob){
+        display: none;
+      }
+
       &__icon{
         height: 50%;
         padding: 81px 43px;
@@ -117,11 +166,26 @@
           padding: 50px 18px;
         }
 
+        @include below($tab){
+          padding: 15px 10px;
+
+          img{
+            width: 51px;
+          }
+        }
+
         &:nth-child(2){
           padding: 73px 73px 73px 133px;
 
           @include below($norm){
             padding: 35px 100px 100px;
+          }
+          @include below($tab){
+            padding: 10px 30px;
+
+            img{
+              height: 50px;
+            }
           }
         }
       }
@@ -139,6 +203,10 @@
   margin: 100px 0;
   overflow: hidden;
 
+  @include below($mob){
+    margin: 15px 0;
+  }
+
   &__img {
     z-index: 1;
     position: relative;
@@ -150,6 +218,12 @@
         width: 1600px;
       }
     }
+
+    @include below($tab){
+      img{
+        width: 1023px;
+      }
     }
+  }
 }
 

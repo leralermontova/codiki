@@ -16,6 +16,7 @@ class Cookies extends Component {
   render() {
     return (
       <div className="header">
+        <div className="mobile-logo"><img src={logo} alt="dom" /></div>
         <MediaQuery minDeviceWidth={1024}>
           <div className="header-wraper">
             <div className="header-inner">

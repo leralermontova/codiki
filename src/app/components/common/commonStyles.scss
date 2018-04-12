@@ -86,6 +86,11 @@ $color-white: #fff;
       font-weight: 700;
     }
 
+    @include below($mob){
+      @include title(16pt);
+      font-weight: 700;
+    }
+
     &:after{
       content: "";
       display: block;
