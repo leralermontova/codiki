@@ -14,32 +14,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  .mainText {
-    font-family: sans-serif;
-    font-size: 40pt;
-    color: #214478;
-    text-transform: uppercase;
-    font-weight: 300;
-    margin: 0 0 20px 0;
-    font-weight: bold;
 
-    @include below($mob){
-      font-size: 20px;
-    }
-    &::after {
-      content: "";
-      display: block;
-      width: 500px;
-      height: 2px;
-      background: #d45500;
-      position: absolute;
-      left: 50%;
-      right: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      margin-top: 20px;
-    }
+  .mainText {
+    @include about;
   }
 
   .secondaryText {

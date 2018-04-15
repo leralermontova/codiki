@@ -155,31 +155,5 @@
 }
 
 .main-container .slider-button {
-  display: block;
-  position: absolute;
-  left: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 999;
-  bottom: 5%;
-  display: block;
-  width: 290px;
-  height: 60px;
-  border: 2px #f60 solid;
-  color: #fff;
-  font-size: 24px;
-  font-family: sans-serif;
-  font-weight: 300;
-  text-transform: uppercase;
-  font-weight: 600;
-  text-align: center;
-  line-height: 53px;
-  cursor: pointer;
-
-  &:hover{
-    background: #ffffff;
-    border: 2px solid white;
-    color: #ff6600;
-    transition: .4s ease;
-  }
+  @include button;
 }

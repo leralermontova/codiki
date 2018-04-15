@@ -53,7 +53,9 @@ export default class PodKlucz extends Component {
     return (
       <div className="podKlucz">
         <div className="titleBlock">
-          <div className="mainText">POD KLUCZ</div>
+          <div className="mainText">
+              <h1>POD KLUCZ</h1>
+          </div>
           <div className="secondaryText">
             Oferujemy możliwość wykończenia<br/>
             zakupionych przez Państwa <br/>

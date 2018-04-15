@@ -7,7 +7,9 @@ class Local extends Component {
     return (
       <div className="local">
         <div className="titleBlock">
-          <div className="mainText">Localizacja</div>
+          <div className="mainText">
+              <h1>Localizacja</h1>
+          </div>
           <div className="secondaryText">
             Cicha i bezpieczna okolica sprawa, ze mne mneszqma oraz domy przeznaczone na sprzedaz<br/>
             na Mazowszu nie sa w stanie konkurować z tą localizacja. <br/>
