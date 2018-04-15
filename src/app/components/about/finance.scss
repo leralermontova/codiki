@@ -1,0 +1,154 @@
+@import "../common/commonStyles";
+
+.finance{
+  display: block;
+  width: 100%;
+  overflow: hidden;
+
+  &__header{
+    @include about;
+  }
+
+  &__statistic{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 4%;
+    height: auto;
+
+
+    .stat-item{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+
+      &__number{
+        width: 125px;
+        height: 125px;
+        border-radius: 100%;
+        border: 2px grey solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        @include below($norm){
+          width: 100px;
+          height: 100px;
+        }
+
+        h5{
+          @include title(34pt);
+          color: #162d50;
+          margin: 0;
+          font-weight: 700;
+        }
+      }
+
+      &__text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        width: 130px;
+
+        p{
+          @include regular(18pt);
+          color: #214478;
+          margin: 0;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  &__fon{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    transform: scaleY(1.02);
+
+    img{
+      width: 100%;
+    }
+
+    .description{
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 5%;
+      text-align: right;
+
+      p{
+        @include regular(24pt);
+        margin-right: 40px;
+        @include below($norm){@include regular(17pt)}
+
+      }
+
+      &:after{
+        display: block;
+        content: "";
+        width: 10px;
+        background-color: #ff6600;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+
+      }
+    }
+    .slider-button{
+      @include button;
+      right: 5%;
+      left: auto;
+      transform: none;
+      bottom: 8%;
+    }
+  }
+
+  &__financowanie{
+    background: url("./img/6.svg");
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin: 0 auto;
+    height: 745px;
+
+    .fin-header{
+      @include about;
+      h1{color: #ffffff;}
+      padding-top: 40px;
+    }
+  }
+  .finance-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10%;
+
+    .finance-list{
+      display: block;
+      width: 50%;
+      margin-top: 30px;
+
+      ul{
+        list-style-type: disc;
+
+
+        li{
+          @include regular(16pt);
+          color: #ffffff;
+          margin: 20px 0;
+        }
+      }
+    }
+
+  }
+
+}
+
