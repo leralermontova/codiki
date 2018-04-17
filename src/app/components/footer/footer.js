@@ -75,14 +75,56 @@ class Footer extends Component {
 						<label
 							htmlFor="form">NAPISZ DO NAS</label>
 						<form
+							id="contactform"
 							action="" method='post'>
-							<div className="input-wrap">
-								<label
-									htmlFor="name">Imię (wymagane)</label>
-								<input
-									id="name"
-									type="text"/>
-							</div>
+							<section className="line-fields">
+								<div className="input-wrap">
+									<label
+										htmlFor="name">Imię (wymagane)</label>
+									<input
+										id="name"
+										name="name"
+										autoComplete='off'
+										type="text"/>
+								</div>
+								<div className="input-wrap">
+									<label
+										htmlFor="phone">Numer telefonu</label>
+									<input
+										id="phone"
+										name="phone"
+										autoComplete='off'
+										type="text"/>
+								</div>
+								<div className="input-wrap">
+									<label
+										htmlFor="email">Adres email (wymagane)</label>
+									<input
+										id="email"
+										autoComplete='off'
+										name="email"
+										type="text"/>
+								</div>
+							</section>
+							<section className="square-field">
+								<div className="input-wrap">
+									<label
+										htmlFor="message">Treść wiadomości:</label>
+									<textarea
+										rows='11'
+										cols='40'
+										id='message'
+										name='message'
+										autoComplete='off'
+										form='contactform'>
+									</textarea>
+								</div>
+							</section>
+							<button
+								type='submit'
+								id='send'>
+								WYŚLIJ
+							</button>
 						</form>
 					</div>
 				</div>

@@ -24,6 +24,11 @@
       flex-direction: column;
       justify-content: center;
 
+      &:nth-child(2),
+      &:nth-child(3){
+        padding-top: 25px;
+      }
+
       label{
         display: block;
         @include regular(16pt);
@@ -65,9 +70,97 @@
             margin: auto 0;
           }
         }
-
-
       }
     }
+  }
+  &__form-partners-wrap{
+    display: flex;
+    position: relative;
+    margin: 0 9%;
+    margin-top: 30px;
+    padding-bottom: 50px;
+
+    .contact-form{
+      display: flex;
+      flex-direction: column;
+
+      label{
+        @include regular(16pt);
+        color: #666666;
+        font-weight: 700;
+        text-transform: uppercase;
+        display: block;
+      }
+      form{
+        display: flex;
+        border: #999999 solid 2px;
+        padding: 10px;
+        position: relative;
+
+        .input-wrap {
+          display: block;
+          margin: 20px;
+
+          input {
+            display: block;
+            width: 350px;
+            padding: 5px;
+            height: 29px;
+
+            &:active,
+            &:focus{
+              outline: none;
+              resize: none;
+            }
+
+          }
+          label {
+            @include regular(14pt);
+            color: #666666;
+            text-transform: none;
+            display: block;
+          }
+          textarea{
+            resize: none;
+
+            &:active,
+            &:focus{
+              outline: none;
+              resize: none;
+            }
+          }
+        }
+        button{
+          background: #999999;
+          width: 115px;
+          height: 40px;
+          text-align: center;
+          @include regular(14pt);
+          color: #ffffff;
+          text-transform: uppercase;
+          border: none;
+          position: absolute;
+          bottom: -54px;
+          right: 0;
+          display: block;
+          cursor: pointer;
+
+          &:active,
+          &:focus{
+            outline: none;
+            resize: none;
+          }
+
+          &:hover{
+            background: white;
+            color: #999999;
+            transition: 1s;
+          }
+        }
+      }
+
+    }
+
+
   }
 }
