@@ -134,9 +134,11 @@ class About extends Component {
 							<div className="finance-contacts">
 								<p>Skontaktuj się z dedykowanym
 									doradcą finansowym:</p>
-								<p>Piotr Brzozowski</p>
-								<ul>
+								<p><strong>Piotr Brzozowski</strong></p>
+								<ul className='phone'>
 									<li>+48 695 672 907</li>
+								</ul>
+								<ul className='mail'>
 									<li>piotr.brzozowski@dknotus.pl</li>
 								</ul>
 							</div>

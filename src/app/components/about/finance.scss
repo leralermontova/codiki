@@ -129,7 +129,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 10%;
+    margin: 0 13%;
+    @include below($norm){
+      margin: 0 6%;
+    }
 
     .finance-list{
       display: block;
@@ -137,13 +140,62 @@
       margin-top: 30px;
 
       ul{
-        list-style-type: disc;
-
-
         li{
           @include regular(16pt);
           color: #ffffff;
           margin: 20px 0;
+          background: url("./img/Krug.svg");
+          background-repeat: no-repeat;
+          line-height: 30px;
+          padding-left: 40px;
+        }
+      }
+    }
+
+    .finance-contacts{
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      justify-content: center;
+      margin-left: 80px;
+      position: relative;
+
+      &:before{
+        content: "";
+        display: block;
+        width: 1px;
+        background: white;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: -15px;
+      }
+
+      p{
+        @include regular(19pt);
+        color: #ffffff;
+        margin: 10px 0;
+      }
+      ul.phone{
+        li{
+          @include regular(16pt);
+          color: #ffffff;
+          background: url("./img/7.svg");
+          background-repeat: no-repeat;
+          line-height: 30px;
+          padding-left: 55px;
+          margin: 10px 0;
+        }
+      }
+      ul.mail{
+        li{
+          @include regular(16pt);
+          color: #ffffff;
+          background: url("./img/8.svg");
+          background-repeat: no-repeat;
+          line-height: 30px;
+          padding-left: 55px;
+          margin: 10px 0;
         }
       }
     }

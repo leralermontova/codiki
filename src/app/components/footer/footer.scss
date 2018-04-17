@@ -1,0 +1,73 @@
+@import "../common/commonStyles";
+
+.footer{
+  display: block;
+  width: 100%;
+  background-color: #f9f9f9;
+  position: relative;
+  margin-bottom: 300px;
+
+  &__header{
+    @include about;
+    margin-bottom: 50px;
+  }
+
+  &__kontakts{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 9%;
+    align-items: center;
+
+
+    .kontakt-item{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      label{
+        display: block;
+        @include regular(16pt);
+        color: #666666;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      &__wrap{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+
+        .icon{
+          display: flex;
+          text-align: center;
+        }
+
+        .kontakt-text{
+          display: flex;
+          margin-left: 50px;
+          position: relative;
+
+          p{
+            @include regular(14pt);
+            color: #666666;
+          }
+
+          &:before{
+            display: block;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -10px;
+            width: 1px;
+            height: 70%;
+            background-color: #999999;
+            bottom: 0;
+            margin: auto 0;
+          }
+        }
+
+
+      }
+    }
+  }
+}
