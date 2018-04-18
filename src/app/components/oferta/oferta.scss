@@ -1,0 +1,40 @@
+@import "../common/commonStyles";
+.flats {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.titleBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .mainText {
+    @include about;
+    }
+  }
+
+  .secondaryText {
+    @include secondary;
+  }
+
+.types {
+  display: flex;
+  justify-content: space-between;
+  color: #214478;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  height: 50px;
+  padding: 0 20px;
+}
+
+.flatList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  div {
+    margin-bottom: 5px;
+  }
+}

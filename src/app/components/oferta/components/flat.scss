@@ -1,0 +1,132 @@
+.flatWrapper {
+  display: flex;
+  flex-direction: row;
+  width: 700px;
+  height: 310px;
+  background: #fff;
+  border: 1px solid #c3c3c3;
+  padding: 30px;
+  box-sizing: border-box;
+  justify-content: space-around;
+  @media screen and (max-width: 1023px) {
+    flex-direction: column;
+    width: 300px;
+    padding: 10px;
+    margin: 0 auto 5px;
+  }
+}
+
+.infoSection {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 3;
+  justify-content: space-around;
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 10px;
+    line-height: 28px;
+  }
+}
+
+.infoRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .title {
+    width: 50%;
+  }
+  .quant {
+    color: #1b3254;
+    font-weight: 700;
+    width: 50%;
+    span {
+      margin-left: 2px;
+      color: #979797;
+      font-weight: 300;
+    }
+  }
+}
+
+.viewSection {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 3;
+  @media screen and (max-width: 1023px) {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+.img {
+  display: flex;
+  height: 255px;
+  width: 150px;
+
+  @media screen and (max-width: 1023px) {
+    height: 120px;
+    width: 90px;
+    flex-grow: 1;
+  }
+  &.typ1 {
+    background: url('./images/typ1.svg');
+  }
+  &.typ2 {
+    background: url('./images/typ1.svg');
+  }
+}
+
+.priceBlWithDiscount {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media screen and (max-width: 1023px) {
+    flex-grow: 1;
+  }
+  .newPrice {
+    color: #162d50;
+    font-size: 27px;
+    margin-bottom: 4px;
+    font-weight: bold;
+  }
+  .byMeterNew {
+    color: #4d4d4d;
+    font-size: 18px;
+    text-align: center;
+  }
+  .oldPrice {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .oldPriceQuant {
+    color: #999999;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .byMeterOld {
+    color: #a7a7a7;
+    font-size: 14px;
+
+  }
+}
+
+.pdf {
+  height: 50px;
+  width: 200px;
+  border: 1px solid #d4d4d4;
+  color: #162d50;
+  font-size: 20px;
+  text-align: 50px;
+  font-weight: bold;
+  outline: none;
+  &:hover {
+    background: #df7f3f;
+    color: #fff;
+  }
+  @media screen and (max-width: 1023px) {
+    height: 25px;
+    width: 125px;
+    font-size: 14px;
+  }
+}
