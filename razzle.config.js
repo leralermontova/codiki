@@ -3,6 +3,8 @@
 const autoprefixer = require("autoprefixer");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const Visualizer = require("webpack-visualizer-plugin");
+const isHeroku = require("is-heroku")
+const entries = require("object.entries")
 
 module.exports = {
   modify: (baseConfig, { target, dev }, webpack) => {
@@ -74,7 +76,31 @@ module.exports = {
       });
     }
 
+    if (target !== "node") return appConfig
+
+    const isDefinePlugin = plugin => plugin.constructor.name === "DefinePlugin"
+    const indexDefinePlugin = appConfig.plugins.findIndex(isDefinePlugin)
+
+    if (indexDefinePlugin < 0) {
+      console.warn("Couldn't setup razzle-heroku, no DefinePlugin...")
+      return appConfig
+    }
+
+    const {definitions} = appConfig.plugins[indexDefinePlugin]
+    const newDefs = {}
+
+    const writeDefs = ([key, val]) => (newDefs[`process.env.${key}`] = val)
+
+    entries(definitions["process.env"]).forEach(writeDefs)
+
+    if (isHeroku) {
+      delete newDefs["process.env.PORT"]
+      newDefs["process.env.RAZZLE_PUBLIC_DIR"] = '"/app/build/public"'
+    }
+
+    appConfig.plugins[indexDefinePlugin] = new webpack.DefinePlugin(newDefs)
+
+
     return appConfig;
-  },
-  port: process.env.PORT || 3000,
+  }
 };
