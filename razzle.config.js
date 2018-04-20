@@ -75,5 +75,6 @@ module.exports = {
     }
 
     return appConfig;
-  }
+  },
+  port: process.env.PORT || 3000,
 };
