@@ -6,7 +6,8 @@
     "start:dev": "razzle start",
     "build": "razzle build",
     "test": "razzle test --env=jsdom",
-    "start": "cross-env NODE_ENV=production node ./build/server.js"
+    "start": "cross-env NODE_ENV=production node ./build/server.js",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "express": "4.16.2",
