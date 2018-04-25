@@ -15,14 +15,14 @@ const assets = require(process.env.RAZZLE_ASSETS_MANIFEST);
 
 const server = express();
 server.use(api);
-
+// console.log(store);
 server
   .disable('x-powered-by')
   .use(express.static(process.env.RAZZLE_PUBLIC_DIR))
   .get('/*', (req, res, next) => {
 
     const store = configureStore();
-    
+
     const promises = routes.reduce((acc, route) => {
       if (matchPath(req.url, route) && route.component && route.component.initialAction) {
         acc.push(Promise.resolve(store.dispatch(route.component.initialAction())));
@@ -41,7 +41,7 @@ server
           </StaticRouter>
         </Provider>
       );
-  
+
       if (context.url) {
         res.redirect(context.url);
       } else {

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Flat from './components/Flat';
+import Oferta1 from './components/oferta1/Oferta1';
 import './oferta.scss';
 
 class Oferta extends Component {
@@ -10,6 +11,7 @@ class Oferta extends Component {
           <div className="mainText">
             <h1>Localizacja</h1>
           </div>
+          <Oferta1 />
           <div className="secondaryText">
             Cicha i bezpieczna okolica sprawa, ze mne mneszqma oraz domy przeznaczone na sprzedaz<br/>
             na Mazowszu nie sa w stanie konkurować z tą localizacja. <br/>

@@ -28,6 +28,10 @@ $mob: 767px;
   @media screen and (max-width: $value) { @content; }
 }
 
+@mixin above($value) {
+  @media screen and (min-width: $value) { @content; }
+}
+
 .wrapper {
   display: block;
   margin: 0 auto;

@@ -3,6 +3,7 @@ import MediaQuery from 'react-responsive';
 //import { Link } from 'react-router-dom';
 import './Header.scss';
 import logo from './images/Logoheader.svg';
+import Oferta from "../oferta/Oferta";
 
 class Cookies extends Component {
 
@@ -26,9 +27,9 @@ class Cookies extends Component {
                     <li className="nav-list__item"><a className="active nav-list__link"> <span className="none-after">O nas</span></a></li>
                     <li className="nav-list__item"><a className="nav-list__link"> <span>Opisanie Oferty</span></a></li>
                     <li className="nav-list__item"><a className="nav-list__link"> <span>Finansowanie</span></a></li>
-                    <li className="nav-list__item"><a className="nav-list__link"> <img src={logo} alt="dom" /></a></li>
+                    <li className="nav-list__item"><a href='../main/Main.js' className="nav-list__link"> <img src={logo} alt="dom" /></a></li>
                     <li className="nav-list__item"><a className="nav-list__link"> <span>Localizacja</span></a></li>
-                    <li className="nav-list__item"><a className="nav-list__link"> <span>Oferta</span></a></li>
+                    <li className="nav-list__item"><a href={Oferta} className="nav-list__link"> <span>Oferta</span></a></li>
                     <li className="nav-list__item"><a className="nav-list__link"> <span>KontaKt</span></a></li>
                   </ul>
                 </nav>

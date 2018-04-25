@@ -5,6 +5,10 @@ import icon1 from './img/7.svg'
 import icon2 from './img/4.svg'
 import icon3 from './img/5.svg'
 import icon4 from './img/1.svg'
+import icon5 from './img/6.svg'
+import icon6 from './img/2.svg'
+import icon7 from './img/3.svg'
+
 
 class Footer extends Component {
 	render() {
@@ -80,7 +84,7 @@ class Footer extends Component {
 							<section className="line-fields">
 								<div className="input-wrap">
 									<label
-										htmlFor="name">Imię (wymagane)</label>
+										htmlFor="name">Imię <span>(wymagane)</span></label>
 									<input
 										id="name"
 										name="name"
@@ -98,7 +102,7 @@ class Footer extends Component {
 								</div>
 								<div className="input-wrap">
 									<label
-										htmlFor="email">Adres email (wymagane)</label>
+										htmlFor="email">Adres email <span>(wymagane)</span></label>
 									<input
 										id="email"
 										autoComplete='off'
@@ -112,7 +116,7 @@ class Footer extends Component {
 										htmlFor="message">Treść wiadomości:</label>
 									<textarea
 										rows='11'
-										cols='40'
+										cols='60'
 										id='message'
 										name='message'
 										autoComplete='off'
@@ -127,6 +131,32 @@ class Footer extends Component {
 							</button>
 						</form>
 					</div>
+					<div className="partners">
+						<div className="partners__left">
+							<img
+								src={icon5}
+								className='imgLake'
+								alt=""/>
+						</div>
+						<div className="partners__right">
+							<label
+								htmlFor="">INWESTOR I GENERALNY
+								WYKONAWCA:</label>
+							<img
+								src={icon6}
+								className='imgFirst'
+								alt=""/>
+							<label
+								htmlFor="">PARTNER PROJEKTU:</label>
+							<img
+								src={icon7}
+								className='imgSecond'
+								alt=""/>
+						</div>
+					</div>
+				</div>
+				<div className="copypasta">
+					<p>&#9400; RNSNS Investments 2018</p>
 				</div>
 			</div>
 		

@@ -5,7 +5,6 @@
   width: 100%;
   background-color: #f9f9f9;
   position: relative;
-  margin-bottom: 300px;
 
   &__header{
     @include about;
@@ -35,6 +34,9 @@
         color: #666666;
         font-weight: 700;
         text-transform: uppercase;
+        @include below($norm){
+          @include regular(13pt);
+        }
       }
 
       &__wrap{
@@ -51,10 +53,17 @@
           display: flex;
           margin-left: 50px;
           position: relative;
+          @include below($norm){
+            margin-left: 20px;
+          }
 
           p{
             @include regular(14pt);
             color: #666666;
+            @include below($norm){
+              @include regular(11pt);
+              color: #666666;
+            }
           }
 
           &:before{
@@ -73,12 +82,26 @@
       }
     }
   }
+
+  .copypasta{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+
+    p{
+      @include regular(12pt);
+      color: #999999;
+    }
+  }
+
   &__form-partners-wrap{
     display: flex;
     position: relative;
     margin: 0 9%;
     margin-top: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 120px;
+    justify-content: space-between;
 
     .contact-form{
       display: flex;
@@ -103,9 +126,13 @@
 
           input {
             display: block;
-            width: 350px;
+            width: 450px;
             padding: 5px;
             height: 29px;
+
+            @include below($norm){
+              width: 250px;
+            }
 
             &:active,
             &:focus{
@@ -119,9 +146,19 @@
             color: #666666;
             text-transform: none;
             display: block;
+
+            span{
+              @include regular(10pt);
+              color: #666666;
+              text-transform: none;
+            }
           }
           textarea{
             resize: none;
+
+            @include below($norm){
+              width: 200px;
+            }
 
             &:active,
             &:focus{
@@ -136,6 +173,7 @@
           height: 40px;
           text-align: center;
           @include regular(14pt);
+          font-weight: 700;
           color: #ffffff;
           text-transform: uppercase;
           border: none;
@@ -152,7 +190,8 @@
           }
 
           &:hover{
-            background: white;
+            background: inherit;
+            border: #999999 2px solid;
             color: #999999;
             transition: 1s;
           }
@@ -160,7 +199,56 @@
       }
 
     }
+    .partners{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-left: 4%;
 
+      &__left{
+        display: flex;
+      }
 
+      &__right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 10%;
+        align-items: start;
+
+        label{
+          display: flex;
+          @include regular(12pt);
+          color: #999999;
+          text-transform: uppercase;
+          font-weight: 700;
+          margin: 10px 0;
+          @include below($norm){
+            @include regular(10pt);
+            color: #999999;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin: 10px 0;
+          }
+
+        }
+        .imgFirst {
+          margin-bottom: 30px;
+          width: 150px;
+        }
+
+        .imgLake{
+          width: 150px;
+        }
+
+        .imgSecond{
+          width: 150px;
+        }
+
+        image{
+          display: flex;
+        }
+      }
+    }
   }
 }

@@ -7,6 +7,7 @@ import configureStore from "../src/app/store/configureStore";
 import App from './app/App';
 
 const store = configureStore(window.__initialData__);
+console.log(store);
 
 hydrate(
   <Provider store={store}>

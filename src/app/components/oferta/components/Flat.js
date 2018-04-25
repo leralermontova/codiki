@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import './flat.scss';
 
 class Flat extends Component {
 
   render() {
 
-    const { flat, number, type, hasDiscount, ...rest } = this.props;
+    const { type, hasDiscount } = this.props;
 
     return (
       <div className='flatWrapper'>

@@ -1,9 +1,9 @@
 import React, { Component} from "react";
 import Slider from "react-slick";
 import './PodKlucz.scss';
-import img1 from './images/klucz1.jpg';
-import img2 from './images/klucz2.jpg';
-import img3 from './images/klucz3.jpg';
+import img1 from './images/Pod.jpg';
+import img2 from './images/Pod1.jpg';
+import img3 from './images/Pod3.jpg';
 import radio from './images/radio.png';
 
 export default class PodKlucz extends Component {
@@ -22,12 +22,12 @@ export default class PodKlucz extends Component {
   render() {
     var settings = {
       infinite: true,
-      speed: 500,
+      speed: 2000,
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
       arrows: false,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 5000,
       dots: true,
       appendDots: dots => (
         <div
@@ -75,26 +75,25 @@ export default class PodKlucz extends Component {
             </div>
           </Slider>
           <div className="mainContainer">
-            <div className="title">SPRAWDZENI FACHOWCY</div>
+            <div className="title"><strong>SPRAWDZENI FACHOWCY</strong></div>
             <div className="subtitle">GWARANTUJĄ SOLIDNIE <br/>TERMINDWO WYKONANE PRACE</div>
-            <div className="infoText">
-              <div className="secondaryText">
-                <span>Wiemy, że bywają sytuacje kiedy mają</span>
-                <span>Państwo mało czasu na wprowadzenie</span>
-                <span>się do nowego mieszkania — to również</span>
-                <span>nie stanowi dla nas problemu.</span>
-                <span>Decydując się na wykończenie</span>
-                <span>z nami wnętrza:</span>
-                <span>• oszczędzają Państwo czas</span>
-                <span>• współpracują Państwo ze specjalistami</span>
-                <span>• mogą Państwo liczyć na porady</span>
+              <div className="text-block">
+                <p>Wiemy, że bywają sytuacje kiedy mają
+					Państwo mało czasu na wprowadzenie
+					się do nowego mieszkania – to również
+					nie stanowi dla nas problemu.</p>
+                <p>Decydując się na wykończenie
+					z nami wnętrza:Decydując się na wykończenie
+					z nami wnętrza:</p>
+                <ul>
+					<li>oszczędzają Państwo czas</li>
+					<li>współpracują Państwo ze specjalistami</li>
+					<li>mogą Państwo liczyć na porady</li>
+                </ul>
               </div>
             </div>
           </div>
-
-
         </div>
-      </div>
     );
   }
 }

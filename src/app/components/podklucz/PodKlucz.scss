@@ -8,20 +8,43 @@
     display: block;
     // position: relative;
     // max-width: 1920px;
-    width: 66%;
-    max-width: 800px;
-    height: auto;
+    width: 55%;
+    //max-width: 800px;
+    height: 700px;
     right: 0;
+    margin: 0;
 
     @include below($norm){
-      width: 66%;
+      width: 55%;
+      height: 450px;
     }
     @include below($tab){
       width: 50%;
+      height: 350px;
     }
     @include below($mob){
       width: 100%;
     }
+  }
+
+  .imgKlucz{
+    display: block;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    width: 100%;
+    height: 700px;
+
+    @include below($norm){
+      height: 450px;
+    }
+    @include below($tab){
+      height: 350px;
+    }
+    @include below($mob){
+      width: 100%;
+    }
+
   }
 
   .horizontal {
@@ -38,25 +61,35 @@
   }
 
   .title, .subtitle {
-    font-size: 20px;
-    text-transform: uppercase;
-    color: #214478;
     margin-bottom: 10px;
-  }
+    @include regular(23pt);
+    color: #214478;
 
-  .title {
-    font-weight: bold;
+    @include below($norm){
+      @include regular(15pt);
+      color: #162d50;
+    }
   }
 
   .mainContainer{
-    width: 600px;
-    border: 2px #f60 solid;
+    width: 45%;
+    border: 4px #f60 solid;
     position: absolute;
-    top: 30px;
-    left: 100px;
+    top: 50px;
+    bottom: 50px;
+    margin: auto 0;
+    left: 10%;
     z-index: 1;
     box-sizing: border-box;
-    padding: 20px 0 20px 20px;
+    padding: 40px 220px 20px 50px;
+
+    @include below($norm){
+      padding: 30px 150px 20px 30px;
+    }
+
+    @include below(1150px){
+      padding: 30px 80px 20px 30px;
+    }
 
     @include below($mob){
       position: relative;
@@ -76,7 +109,7 @@
   .titleBlock {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-bottom: 30px;
 
     .mainText {
       @include about;
@@ -93,12 +126,22 @@
     height: 20px;
   }
 
-  .infoText {
-    .secondaryText {
-      display: flex;
-      flex-direction: column;
-      font-size: 16px;
-      line-height: 1.4;
+  .text-block {
+    @include regular(18pt);
+    color: #162d50;
+
+    @include below($norm){
+      @include regular(12pt);
+      color: #162d50;
+    }
+
+    p{
+      margin-bottom: 0;
+    }
+
+    ul{
+      list-style-type: circle;
+      list-style-position: inside;
     }
   }
 
